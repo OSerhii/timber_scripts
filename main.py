@@ -7,7 +7,7 @@ TENDERS_COUNT = 100
 
 
 def create_tender():
-    with open("data/create_tender.json", 'r') as f_obj:
+    with open("data/create_tender.json", 'r', encoding='utf-8') as f_obj:
         jsn = f_obj.read()
 
     data = json.loads(jsn)
@@ -29,3 +29,8 @@ if __name__ == '__main__':
     for i in range(TENDERS_COUNT):
         tender_ids.append(create_tender())
     print(tender_ids)
+
+
+
+#Changing line 112 to self.encoder = json.load(open(vocab_file, 'r', encoding='utf-8')) should fix this issue.
+
