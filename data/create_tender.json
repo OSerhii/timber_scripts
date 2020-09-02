@@ -1,0 +1,160 @@
+{
+    "sellingMethod": "timber-english-fast-manual",
+    "value": {
+        "amount": 1000000,
+        "valueAddedTaxIncluded": true,
+        "currency": "UAH"
+    },
+    "guarantee": {
+        "amount": 1000,
+        "currency": "UAH"
+    },
+    "minimalStep": {
+        "amount": 1200,
+        "currency": "UAH"
+    },
+    "title": {
+        "uk_UA": "Тестова процедура auction.type.timber-english-fast-manual для Сергія "
+    },
+    "description": {
+        "uk_UA": "Тестова процедура auction.type.timber-english-fast-manual для Сергія "
+    },
+    "accessDetails": {
+        "uk_UA": "123"
+    },
+    "x_documentRequirements": {
+        "uk_UA": "test"
+    },
+    "x_additionalInformation": {
+        "uk_UA": "test"
+    },
+    "lotId": "1",
+    "tenderAttempts": 1,
+    "items": [
+        {
+            "id": "a47fbe6ca5fe9da6767584860073329a",
+            "description": {
+                "uk_UA": "Тестова процедура auction.type.timber-english-fast-manual для Сергія "
+            },
+            "unitValue": {
+                "amount": 1000,
+                "currency": "UAH"
+            },
+            "quantity": 1,
+            "unit": {
+                "code": "MTQ"
+            },
+            "classification": {
+                "id": "03410000-7",
+                "scheme": "CAV"
+            },
+            "additionalClassifications": [
+                {
+                    "id": "QB49-3",
+                    "scheme": "CPVS"
+                },
+                {
+                    "id": "firewood1NP",
+                    "scheme": "timberSortment"
+                },
+                {
+                    "id": "ABIH",
+                    "scheme": "timberSpecies"
+                },
+                {
+                    "id": "noQualityClass",
+                    "scheme": "timberClass"
+                },
+                {
+                    "id": "firewood1NPstack",
+                    "scheme": "timberDiameter"
+                },
+                {
+                    "id": "12,0 - 15,0",
+                    "scheme": "timberLength"
+                },
+                {
+                    "id": "01",
+                    "scheme": "timberStorage"
+                },
+                {
+                    "id": "2020",
+                    "scheme": "timberProductionYear"
+                },
+                {
+                    "id": "2",
+                    "scheme": "timberProductionQuarter"
+                }
+            ],
+            "address": {
+                "countryName": {
+                    "uk_UA": "Україна"
+                },
+                "region": {
+                    "uk_UA": "Київ"
+                },
+                "locality": {
+                    "uk_UA": "Київ"
+                },
+                "streetAddress": {
+                    "uk_UA": "ул. Космонавтов 341"
+                },
+                "postalCode": "65234"
+            }
+        }
+    ],
+    "auctionPeriod": {
+        "startDate": "2020-09-27T16:50:00+03:00"
+    },
+    "bankAccount": [
+        {
+            "bankName": {
+                "uk_UA": "Банк"
+            },
+            "description": {
+                "uk_UA": "Банк"
+            },
+            "accountIdentifications": [
+                {
+                    "scheme": "UA-IBAN",
+                    "id": "XX123456789012345678901234567",
+                    "description": {
+                        "uk_UA": "опис"
+                    }
+                }
+            ]
+        }
+    ],
+    "sellingEntity": {
+        "identifier": {
+            "scheme": "UA-EDR",
+            "legalName": {
+                "uk_UA": "timberEnglish"
+            },
+            "id": "34321456"
+        },
+        "address": {
+            "streetAddress": {
+                "uk_UA": "Б. Хмельницького"
+            },
+            "locality": {
+                "uk_UA": "Київ"
+            },
+            "region": {
+                "uk_UA": "м. Київ"
+            },
+            "postalCode": "23214",
+            "countryName": {
+                "en_US": "Ukraine",
+                "uk_UA": "Україна"
+            }
+        },
+        "contactPoint": {
+            "name": {
+                "uk_UA": " Альберт Ейнштейн"
+            },
+            "email": "timberEnglish@byustudio.in.ua",
+            "telephone": "+380993531028"
+        }
+    }
+}
