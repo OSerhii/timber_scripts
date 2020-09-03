@@ -14,10 +14,10 @@
         "currency": "UAH"
     },
     "title": {
-        "uk_UA": "Тестова процедура auction.type.timber-english-fast-manual для Сергія "
+        "uk_UA": "50 тестових процедур auction.type.timber-english-fast-manual для Ані"
     },
     "description": {
-        "uk_UA": "Тестова процедура auction.type.timber-english-fast-manual для Сергія "
+        "uk_UA": "50 тестових процедур auction.type.timber-english-fast-manual для Ані"
     },
     "accessDetails": {
         "uk_UA": "123"
@@ -34,7 +34,7 @@
         {
             "id": "a47fbe6ca5fe9da6767584860073329a",
             "description": {
-                "uk_UA": "Тестова процедура auction.type.timber-english-fast-manual для Сергія "
+                "uk_UA": "50 тестових процедур auction.type.timber-english-fast-manual для Ані"
             },
             "unitValue": {
                 "amount": 1000,

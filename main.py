@@ -1,9 +1,10 @@
 import json
 from requests import Request, Session
 
-CREATE_TENDER_URL = "https://procedure-sandbox.prozorro.sale"
+CREATE_TENDER_URL_FOR_SB = "https://procedure-sandbox.prozorro.sale"
+CREATE_TENDER_URL_FOR_STAGE = "https://procedure-staging.prozorro.sale"
 KEY = "9fa74b0e-e692-4746-b38b-8a4387097a53"
-TENDERS_COUNT = 100
+TENDERS_COUNT = 50
 
 
 def create_tender():
@@ -17,7 +18,7 @@ def create_tender():
     }
 
     s = Session()
-    r = Request('POST', "{}/api/procedures".format(CREATE_TENDER_URL), json=data, headers=headers)
+    r = Request('POST', "{}/api/procedures".format(CREATE_TENDER_URL_FOR_STAGE), json=data, headers=headers)
     prepped = r.prepare()
     resp = s.send(prepped)
     print(resp.content)
