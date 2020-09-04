@@ -1,9 +1,17 @@
 import json
 from requests import Request, Session
 
-CREATE_TENDER_URL = "https://procedure-sandbox.prozorro.sale"
+
+class Platforms:
+    neb = "test-cbd3.neb.org.ua"
+
+
+CREATE_TENDER_URL = "https://procedure-staging.prozorro.sale"
 KEY = "9fa74b0e-e692-4746-b38b-8a4387097a53"
 TENDERS_COUNT = 100
+PLATFORM_INSTANCE = Platforms.neb
+
+s = Session()
 
 
 def create_tender():
@@ -16,7 +24,6 @@ def create_tender():
         "Content-Type": "application/json"
     }
 
-    s = Session()
     r = Request('POST', "{}/api/procedures".format(CREATE_TENDER_URL), json=data, headers=headers)
     prepped = r.prepare()
     resp = s.send(prepped)
@@ -24,8 +31,23 @@ def create_tender():
     return json.loads(resp.content)['id']
 
 
+def retrieve_uaid(internal_id):
+    r = Request('GET', "{}/api/procedures/{}".format(CREATE_TENDER_URL, internal_id))
+    prepped = r.prepare()
+    resp = s.send(prepped)
+    ua_id = json.loads(resp.content)['auctionId']
+    return ua_id
+
+
+def create_platform_url(ua_id, platform):
+    return "http://{}/participant/auction/bids/{}".format(platform, ua_id)
+
+
 if __name__ == '__main__':
     tender_ids = list()
     for i in range(TENDERS_COUNT):
-        tender_ids.append(create_tender())
+        internal_id = create_tender()
+        ua_id = retrieve_uaid(internal_id)
+        url = create_platform_url(ua_id, PLATFORM_INSTANCE)
+        tender_ids.append(url)
     print(tender_ids)
