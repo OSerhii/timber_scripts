@@ -2,35 +2,31 @@ import json
 from requests import Request, Session
 
 
-=======
-
 class Platforms:
     neb = "test-cbd3.neb.org.ua"
 
 
 CREATE_TENDER_URL = "https://procedure-staging.prozorro.sale"
-KEY = "9fa74b0e-e692-4746-b38b-8a4387097a53"
-TENDERS_COUNT = 100
+KEY = "9b09378f-0547-4069-8d6c-05aa82f84006"
+TENDERS_COUNT = 50
 PLATFORM_INSTANCE = Platforms.neb
 
 s = Session()
 
-
 def create_tender():
-    with open("data/create_tender.json", 'r', encoding='utf-8') as f_obj:
+    with open("data/create_tender.json", 'r') as f_obj:
         jsn = f_obj.read()
 
     data = json.loads(jsn)
+
     headers = {
         "Authorization": KEY,
         "Content-Type": "application/json"
     }
 
-
     r = Request('POST', "{}/api/procedures".format(CREATE_TENDER_URL), json=data, headers=headers)
     prepped = r.prepare()
     resp = s.send(prepped)
-    print(resp.content)
     return json.loads(resp.content)['id']
 
 
@@ -54,8 +50,3 @@ if __name__ == '__main__':
         url = create_platform_url(ua_id, PLATFORM_INSTANCE)
         tender_ids.append(url)
     print(tender_ids)
-
-
-
-#Changing line 112 to self.encoder = json.load(open(vocab_file, 'r', encoding='utf-8')) should fix this issue.
-
