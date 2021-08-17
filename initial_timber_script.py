@@ -24,14 +24,16 @@ def create_tender():
         "Content-Type": "application/json"
     }
 
-    r = Request('POST', "{}/api/procedures".format(CREATE_TENDER_URL), json=data, headers=headers)
+    # r = Request('POST', "{}/api/procedures".format(CREATE_TENDER_URL), json=data, headers=headers)
+    r = Request('POST', "{}/".format(CREATE_TENDER_URL), json=data, headers=headers)
     prepped = r.prepare()
     resp = s.send(prepped)
     return json.loads(resp.content)['id']
 
 
 def retrieve_uaid(internal_id):
-    r = Request('GET', "{}/api/procedures/{}".format(CREATE_TENDER_URL, internal_id))
+    #r = Request('GET', "{}/api/procedures/{}".format(CREATE_TENDER_URL, internal_id))
+    r = Request('GET', "{}/{}".format(CREATE_TENDER_URL, internal_id))
     prepped = r.prepare()
     resp = s.send(prepped)
     ua_id = json.loads(resp.content)['auctionId']

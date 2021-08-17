@@ -1,0 +1,36 @@
+{
+"data": {
+"comment": "",
+"dateModified": "2020-06-11T09:51:37.584636+03:00",
+"deliveryAddresses": [
+{
+"countryName": "Україна",
+"locality": "",
+"postalCode": "",
+"region": "м. Київ"
+}
+],
+"id": "19fcac9e354398be98651cfca2b992f3",
+"minOrderValue": {
+"amount": 1000,
+"currency": "UAH"
+},
+"relatedProduct": "3019-NAVI-5602024006102-631531",
+"status": "hidden",
+"suppliers": [
+{
+"identifier": {
+"id": "33058948",
+"legalName": "Товариство з обмеженою відповідальністю \"Парус Плюс\"",
+"scheme": "UA-EDR"
+},
+"name": "Товариство з обмеженою відповідальністю \"Парус Плюс\""
+}
+],
+"value": {
+"amount": 0,
+"currency": "UAH",
+"valueAddedTaxIncluded": true
+}
+}
+}
