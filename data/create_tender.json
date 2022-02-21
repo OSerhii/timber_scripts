@@ -14,10 +14,10 @@
         "currency": "UAH"
     },
     "title": {
-        "uk_UA": "Тестова процедура auction.type.timber-english-fast-manual для Сергія "
+        "uk_UA": "10 тестових процедур auction.type.timber-english-fast-manual для Саша"
     },
     "description": {
-        "uk_UA": "Тестова процедура auction.type.timber-english-fast-manual для Сергія "
+        "uk_UA": "10 тестових процедур auction.type.timber-english-fast-manual для Саша"
     },
     "accessDetails": {
         "uk_UA": "123"
@@ -34,7 +34,7 @@
         {
             "id": "a47fbe6ca5fe9da6767584860073329a",
             "description": {
-                "uk_UA": "Тестова процедура auction.type.timber-english-fast-manual для Сергія "
+                "uk_UA": "10 тестових процедур auction.type.timber-english-fast-manual для Саша"
             },
             "unitValue": {
                 "amount": 1000,
@@ -91,7 +91,7 @@
                     "uk_UA": "Україна"
                 },
                 "region": {
-                    "uk_UA": "Київ"
+                    "uk_UA": "Одеська область"
                 },
                 "locality": {
                     "uk_UA": "Київ"
@@ -104,7 +104,7 @@
         }
     ],
     "auctionPeriod": {
-        "startDate": "2020-09-27T16:50:00+03:00"
+        "startDate": "2021-01-13T19:40:00+03:00"
     },
     "bankAccount": [
         {
@@ -115,14 +115,12 @@
                 "uk_UA": "Банк"
             },
             "accountIdentifications": [
-                {
-                    "scheme": "UA-IBAN",
-                    "id": "XX123456789012345678901234567",
-                    "description": {
-                        "uk_UA": "опис"
-                    }
-                }
-            ]
+    {
+
+        "scheme": "UA-IBAN",
+        "id": "DG321334567892345678907777777"
+    }
+]
         }
     ],
     "sellingEntity": {
@@ -138,10 +136,10 @@
                 "uk_UA": "Б. Хмельницького"
             },
             "locality": {
-                "uk_UA": "Київ"
+                "uk_UA": "Одеса"
             },
             "region": {
-                "uk_UA": "м. Київ"
+                "uk_UA": "Одеська область"
             },
             "postalCode": "23214",
             "countryName": {
